@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Overland Science</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115813062-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-115813062-1');
+    </script>
   </head>
   <body>
-      {{ block "main" . }}{{ end }}
+    <div id="content">
+      {{ partial "masthead.html" . }}
+      <div id="main">
+        {{ block "main" . }}
+          {{ end }}
+      </div>
+    </div>
+    {{ partial "footer.html" . }}
   </body>
 </html>
