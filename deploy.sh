@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+# Move to directory of script
+cd "$(dirname "$0")"
+
+rm -rf public; hugo
+aws s3 rm s3://www.overlandscience.com --recursive  --profile overland
+aws s3 cp ./public s3://www.overlandscience.com/ --recursive --profile overland
+
+echo "Deployed!"
