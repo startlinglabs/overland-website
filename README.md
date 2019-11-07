@@ -8,6 +8,7 @@ Overland Science Website
 2. Create S3 bucket
 3. Create SSL Certificates 
 4. Create CloudFront distribution
+5. Set up Route53
 
 
 ### Get your AWS keys
@@ -16,8 +17,8 @@ Overland Science Website
 2. Edit ~/.aws/config; set keys for overland profile, i.e.
 	```[profile overland]
 	region = us-west-2
-	aws_access_key_id = AKIATXSZCM4NT2LEPI2B
-	aws_secret_access_key = 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
+	aws_access_key_id = ******
+	aws_secret_access_key = ******
 	```
 
 
@@ -86,14 +87,14 @@ Overland Science Website
 
 ### Setup Route53 for both www and naked domain
 
-1) Create an A record:
+1. Create an A record:
   - empty name
   - Type: A record
   - Alias: Yes
-  - Alias target: xyz...cloudfront.net
+  - Alias target: d1cdi5jamn7rl4.cloudfront.net
 
-2) Create a CNAME record:
+2. Create a CNAME record:
  - Name: www
  - Type: CNAME
  - Alias: No
- - Value: xyz...cloudfront.net
+ - Value: d1cdi5jamn7rl4.cloudfront.net
