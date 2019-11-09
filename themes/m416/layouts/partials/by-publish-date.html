@@ -1,0 +1,9 @@
+<ul>
+    <!-- orders content according to the "publishdate" field in front matter -->
+    {{ range .Pages.ByPublishDate }}
+        <li>
+            <h2><a href="{{ .Permalink }}">Yo {{ .Title }} yo</a></h2>
+            <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+        </li>
+    {{ end }}
+</ul>
