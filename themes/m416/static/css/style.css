@@ -1,12 +1,13 @@
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #content {
@@ -14,151 +15,160 @@ body {
 }
 
 #header {
-	background-image: url(/images/nature-road-1000.jpg);
-  	background-size: cover;
-	width: 100%;
-	height: 200px;
+    background-image: url(/images/nature-road-1000.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+#header .brand {
+    color: white;
+    background-color: rgba(75,83,32,0.8);
+    position: absolute;
+    top: 20px;
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    padding-left: 30px;
+    box-sizing: border-box;
 }
 
 h1 {
-	color: white;
-	background-color: rgba(75,83,32,0.8);
-	top: 100px;
-	float: left;
-	width: 100%;
-	padding-left: 30px;
-	box-sizing: border-box;
+    font-size: 2em;
+    font-weight: bold;
+    color: #4b5320;
 }
 
 h2 {
-	color: #4b5320;
+    color: #4b5320;
 }
 
 h3 {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 a {
-	color: #4b5320;
-	text-decoration: none;
+    color: #4b5320;
+    text-decoration: none;
 }
 
 @media (max-width: 640px) {
-	.nav-section-header {
-		display: none;
-	}
+    .nav-section-header {
+        display: none;
+    }
 
-	#navlinks {
-		background-color: #444;
-		list-style: none;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		padding: 5px;
-	}
+    #navlinks {
+        background-color: #444;
+        list-style: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 5px;
+    }
 
-	#navlinks li {
-		display: inline-block;
-		margin-left: 10px;
-	}
+    #navlinks li {
+        display: inline-block;
+        margin-left: 10px;
+    }
 
-	#navlinks a {
-		color: white;
-		cursor: pointer;
-	}
+    #navlinks a {
+        color: white;
+        cursor: pointer;
+    }
 
-	#main {
-		padding: 20px;
-	}
+    #main {
+        padding: 20px;
+    }
 }
 
 @media (min-width: 641px) {
-	#navlinks {
-		margin-top: 40px;
-		margin-right: 20px;
-		float: left;
-		width: 20%;
-		text-align: right;
-		list-style: none;
-	}
+    #navlinks {
+        margin-top: 40px;
+        margin-right: 20px;
+        float: left;
+        width: 20%;
+        text-align: right;
+        list-style: none;
+    }
 
-	#main {
-		float: left;
-		width: 60%;
-		padding: 20px;
-	}
+    #main {
+        float: left;
+        width: 60%;
+        padding: 20px;
+    }
 
-	.nav-section-header {
-		margin-top: 10px;
-		text-decoration: underline;
-	}
+    .nav-section-header {
+        margin-top: 10px;
+        text-decoration: underline;
+    }
 }
 
 .refresh-message {
-	background-color: yellow;
-	border-radius: 5px;
-	border: 1px solid gray;
-	padding: 5px;
-	cursor: pointer;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    cursor: pointer;
 }
 
 #trailer-outline {
-	width: 70%;
-	height: 70%;
-	float: right;
+    width: 70%;
+    height: 70%;
+    float: right;
 }
 
 #intro {
-	font-size: 1.5em;
-	color: #4b5320;
+    font-size: 1.5em;
+    color: #4b5320;
 }
 
 #footer {
-	width: 100%;
-	background-color: #4b5320;
-	color: white;
-	font-size: 0.7em;
+    width: 100%;
+    background-color: #4b5320;
+    color: white;
+    font-size: 0.7em;
 }
 
 #footer div {
-	width: 31%;
-	float: left;
-	margin: 1%;
+    width: 31%;
+    float: left;
+    margin: 1%;
 }
 
 #footer p {
-	margin-top: 0px;
+    margin-top: 0px;
 }
 
 div.csv-table {
-	background-image: url(/images/spinner.gif);
-  	background-size: cover;
-	width: 64px;
-	height: 64px;	
+    background-image: url(/images/spinner.gif);
+    background-size: cover;
+    width: 64px;
+    height: 64px;   
 }
 
 table.csv-table {
-	border-collapse: collapse;
-	border: 1px solid #444;
+    border-collapse: collapse;
+    border: 1px solid #444;
 }
 
 table.csv-table td {
-	padding: 5px;
-	text-align: left;
-	border-bottom: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
 }
 
 table.csv-table tr:first-child {
-	color: white;
-	background-color: #444;
-	vertical-align: bottom;
+    color: white;
+    background-color: #444;
+    vertical-align: bottom;
 }
 
 table.csv-table a {
-	color: blue;
-	text-decoration: underline;
+    color: blue;
+    text-decoration: underline;
 }
 
 table.csv-table .table-section {
-	background-color: #ddd;
-	font-weight: bold;
+    background-color: #ddd;
+    font-weight: bold;
 }
