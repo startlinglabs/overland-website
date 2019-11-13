@@ -1,4 +1,13 @@
 {{ define "main" }}
     {{ .Content }}
-    {{ partial "by-publish-date.html" . }}
+
+	<ul class="pagelist">
+	    <!-- orders content according to the "publishdate" field in front matter -->
+	    {{ range where .Site.RegularPages "Type" "posts" }}
+	        <li>
+	            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+	            <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+	        </li>
+	    {{ end }}
+	</ul>
 {{ end }}

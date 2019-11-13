@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-<ul>
+<ul class="pagelist">
     <!-- orders content according to the "publishdate" field in front matter -->
     {{ range .Pages }}
         <li>
-            <h2><a href="{{ .Permalink }}">Default {{ .Title }} !</a></h2>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
         </li>
     {{ end }}

@@ -62,6 +62,10 @@ a {
     text-decoration: none;
 }
 
+ul.pagelist {
+    list-style-type: none;
+}
+
 @media (max-width: 640px) {
     .nav-section-header {
         display: none;

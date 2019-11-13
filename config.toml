@@ -1,7 +1,4 @@
 baseURL = "http://www.overlandscience.com/"
 languageCode = "en-us"
 title = "Overland Science"
-canonifyURLs = true
 theme = "m416"
-
-
