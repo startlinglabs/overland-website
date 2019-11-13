@@ -36,7 +36,7 @@ body {
 
 #header img {
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 10px;
     height: 60px;
     width: 80px;
@@ -66,12 +66,17 @@ ul.pagelist {
     list-style-type: none;
 }
 
+li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
 .week-nav {
     text-align: left;
 }
 
 @media (max-width: 640px) {
-    .nav-section-header, .big-only {
+    .nav-section-header, .week-nav {
         display: none;
     }
 
