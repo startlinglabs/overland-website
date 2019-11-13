@@ -66,8 +66,12 @@ ul.pagelist {
     list-style-type: none;
 }
 
+.week-nav {
+    text-align: left;
+}
+
 @media (max-width: 640px) {
-    .nav-section-header {
+    .nav-section-header, .big-only {
         display: none;
     }
 
@@ -95,6 +99,10 @@ ul.pagelist {
 }
 
 @media (min-width: 641px) {
+    .small-only {
+        display: none;
+    }
+
     #navlinks {
         margin-top: 40px;
         margin-right: 20px;

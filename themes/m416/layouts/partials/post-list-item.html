@@ -1,0 +1,9 @@
+<li>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+    <p>{{ .Summary }}</p>
+	{{ range .Resources.ByType "image" }}
+		{{ $thumb := (.Resize "200x").RelPermalink }}
+	    <img src="{{ $thumb }}">
+	{{ end }}
+</li>
